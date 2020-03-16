@@ -31,6 +31,10 @@ strong {
     font-weight: 400;
 }
 
+em {
+    color: #555;
+}
+
 /* class */
 .container {
     display: bock;
@@ -180,15 +184,12 @@ strong {
 .who {
     display: flex;
     flex-flow: row nowrap;
+    min-height: 600px;
 }
 
 .who-content-img {
     flex: 1;
-}
-
-.who-content-img img{
-    width: 100%;
-    height: 100%;
+    background: url(../img/team.jpg) center center/cover;
 }
 
 .who-content-text {
@@ -206,4 +207,101 @@ strong {
 .who-content-text p{
     font-size: 1.3rem;
     line-height: 1.8rem;
+}
+
+/* testimonials */
+
+.testimonials {
+    padding: 5em 1rem 5rem 1rem;
+}
+
+.testimonials-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials-elem {
+    flex: 1;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.testimonials-elem-text {
+    padding: 0 2rem;
+}
+
+.testimonials-elem-text p i {
+    margin: 0.2rem;
+}
+
+.testimonials-elem-profil img {
+    width: 50px;
+    border-radius: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.testimonials-elem-profil p {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* contact */
+.contact {
+    padding: 10rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-form input {
+    background-color: #333;
+    border: 0;
+    border-bottom: 1px solid #555;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: white;
+    outline: 0;
+    margin-bottom: 1rem;
+}
+
+.contact-form button {
+    margin: 3rem auto;
+    display: block;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: 30px;
+    background-color: #f1c40f;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: darkorange;
+}
+
+/* footer */
+footer {
+    background-color: #444;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
 }
